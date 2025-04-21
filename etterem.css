@@ -1,0 +1,37 @@
+body {
+    background-color: #001f3f;
+    color: #96f9f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+  /* Felső sáv */
+  .felso {
+    height: 80px;
+    background-color: #001f3f; /* pl. sötétkék */
+    padding: 1%;
+    font-size: small;
+  }
+  
+  /* Középső rész, ahol a háttérkép van */
+  .kozepso {
+    height: calc(100vh - 200px); /* teljes képernyő - 2x100px sáv */
+    background-image: url("buborek.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Alsó sáv */
+  .also {
+    height: 80px;
+    background-color: #001f3f; /* ugyanaz a szín */
+    font-size: 25px;
+}
+  
+.kozepso img {
+    height: 510px;
+}
