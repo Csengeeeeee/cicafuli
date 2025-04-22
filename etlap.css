@@ -1,0 +1,47 @@
+body {
+    background-color: #001f3f;
+    color: #96f9f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.kajalap img {
+    width: 65%;
+  }
+
+.itallap img {
+    width: 65%;
+  }
+
+  .kajalap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .kaja img {
+    display: block;
+  }
+
+  .kszoveg h1 {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .kszoveg p1 {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+  }
