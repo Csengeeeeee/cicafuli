@@ -8,20 +8,50 @@
 </head>
 <body>
     <div class="felso">
+        <h1>
+            Örülünk hogy betért hozzánk, ha meg szeretné tekinteni az étlapunkat, kattintson a sárga étlapra.
+            Ha pedig meg szeretné nézni, mely asztalok foglaltak kattintson a kívánt asztalra.
+        </h1>
+    </div>
 
-        <h1>Örülünk hogy betért hozzánk, ha megszeretné tekinteni az étlapunkat kérem kattintson a sárga étlapra,
-            ha pedig megszeretné nézni mely asztalok foglaltak a mai napra kérem kattintson az üres asztalra legelől.  </h1>
-        </div>
     <div class="kozepso">
-
         <img src="belter.jpg" alt="Beltér" usemap="#etlap">
         <map name="etlap">
-        <area alt="etlap" href="etlap.html" coords="239,167,325,96" shape="rect">
+            <area alt="etlap" href="etlap.html" coords="239,167,325,96" shape="rect">
+            <area alt="asztal1" href="#popup1" coords="31,350,350,500" shape="rect">
+            <area alt="asztal2" href="#popup2" coords="500,300,800,500" shape="rect">
+            <area alt="asztal2" href="#popup3" coords="0,250,200,340" shape="rect">
+            <area alt="asztal2" href="#popup4" coords="300,150,550,340" shape="rect">
         </map>
-    </div>
-    <div class="also">
 
-        <a href="index.html"><strong>Kattinson ide hogy a Főoldara jusson!</strong></a>
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <p>Ez az asztal <strong>SZABAD</strong>.</p>
+                <a href="#" class="close-btn">Bezárás</a>
+            </div>
+        </div>
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <p>Ez az asztal <strong>FOGLALT</strong>.</p>
+                <a href="#" class="close-btn">Bezárás</a>
+            </div>
+        </div>
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <p>Ez az asztal <strong>FOGLALT</strong>.</p>
+                <a href="#" class="close-btn">Bezárás</a>
+            </div>
+        </div>
+        <div id="popup4" class="popup">
+            <div class="popup-content">
+                <p>Ne zavard, alszik.</p>
+                <a href="#" class="close-btn">Bezárás</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="also">
+        <a href="index.html"><strong>Kattintson ide, hogy a Főoldalra jusson!</strong></a>
     </div>
 </body>
 </html>

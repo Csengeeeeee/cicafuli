@@ -1,37 +1,70 @@
 body {
-    background-color: #001f3f;
-    color: #96f9f4;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  background-color: #001f3f;
+  background-image: url("buborek.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #96f9f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
- 
-  .felso {
-    height: 80px;
-    background-color: #001f3f; 
-    padding: 1%;
-    font-size: small;
-  }
-  
- 
-  .kozepso {
-    height: calc(100vh - 200px); 
-    background-image: url("buborek.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  /* Alsó sáv */
-  .also {
-    height: 80px;
-    background-color: #001f3f; 
-    font-size: 25px;
+
+.felso {
+  height: 80px;
+  background-color: #001f3f;
+  padding: 1%;
+  font-size: small;
 }
-  
+
+.kozepso {
+  height: calc(100vh - 200px);
+  position: relative;
+  display: inline-block;
+}
+
 .kozepso img {
-    height: 510px;
+  height: 510px;
+}
+
+.also {
+  height: 90px;
+  background-color: #001f3f;
+  font-size: 25px;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.popup:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+
+.close-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
